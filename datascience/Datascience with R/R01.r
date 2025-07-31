@@ -1,12 +1,12 @@
 R.home("bin")
-library(jsonlite) 
+library(jsonlite)
 library(languageserver)
 library(sf)
-5+6
+5 + 6
 a <- 5
 b = 6
 a == b
-name <- c("ad","ad")
+name <- c("ad", "ad")
 name
 mean(c(1, 2, 3))
 demo()
@@ -32,9 +32,9 @@ names(Scooby)
 sort(names(Scooby))
 dim(Scooby)
 
-sink("./datascience/structure_dataset.txt")  # Ouvre le fichier et redirige la sortie
-str(Scooby)                        # Ce qui s'affiche normalement dans la console ira dans le fichier
-sink()                         # Ferme la redirection (obligatoire)
+sink("./datascience/structure_dataset.txt") # Ouvre le fichier et redirige la sortie
+str(Scooby) # Ce qui s'affiche normalement dans la console ira dans le fichier
+sink() # Ferme la redirection (obligatoire)
 
 mean(Scooby$run.time)
 
@@ -43,7 +43,7 @@ scooby_int_cols <- names(Scooby)[sapply(Scooby, is.integer)]
 scooby_int_cols <- names(Scooby)[sapply(Scooby, is.numeric)]
 sort(scooby_int_cols)
 
-mean(Scooby$imdb, na.rm=TRUE)
+mean(Scooby$imdb, na.rm = TRUE)
 class(Scooby$imdb) #character
 Scooby$imdb <- as.numeric(Scooby$imdb)
 mean(Scooby$imdb, na.rm = TRUE)
@@ -58,11 +58,11 @@ library("tidyverse")
 data()
 view(mpg)
 glimpse(mpg)
-?mpg
-?mean
+? mpg
+? mean
 
-filter(mpg, cty>=20)
-mpg_efficient <- filter(mpg, cty>=20)
+filter(mpg, cty >= 20)
+mpg_efficient <- filter(mpg, cty >= 20)
 view(mpg_efficient)
 mpg_ford <- filter(mpg, manufacturer == "ford")
 view(mpg_ford)
@@ -82,12 +82,32 @@ mpg %>%
 
 # dataviz with ggplot2 (tidyverse)
 
-ggplot(mpg, aes(x=cty)) + 
+ggplot(mpg, aes(x = cty)) +
     geom_histogram() +
-        labs(x="city mileage")
-        
-ggplot(mpg, aes(x=cty)) + 
-    geom_freqpoly() +
-        labs(x="city mileage")
+        labs(x = "city mileage")
 
+ggplot(mpg, aes(x = cty)) +
+    geom_freqpoly() +
+        labs(x = "city mileage")
+
+ggplot(mpg, aes(x = cty)) +
+    geom_freqpoly() +
+    geom_histogram() +
+        labs(x = "city mileage")
+
+ggplot(mpg, aes(x = cty, y = hwy)) +
+    geom_point() +
+        geom_smooth(method = "lm")
+
+ggplot(mpg, aes(x = cty, y = hwy, color = class)) +
+    geom_point(size = 3) +
+    scale_color_brewer(palette= "Dark2")+
+        theme(
+             plot.background = element_rect(fill = "black", color = NA),
+             panel.background = element_rect(fill = "black"),
+             legend.background = element_rect(fill = "black"),
+            text = element_text(color = "white", size = 20),
+             panel.grid.major = element_line(color = "gray80"),
+            panel.grid.minor = element_line(color = "gray40"), # texte global
+        )
 
