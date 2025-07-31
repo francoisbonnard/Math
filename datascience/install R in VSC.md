@@ -40,3 +40,7 @@ VSC : library(jsonlite)
 ctrl , -> 
 R_term_win : C:\Program Files\R\R-4.5.1\bin
 r.lsp.args": ["--slave", "-e", "languageserver::run()"]
+
+.libPaths("C:\Users\franc\OneDrive\Documents\my-projects\Rlib")
+
+
