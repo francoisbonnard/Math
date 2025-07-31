@@ -69,3 +69,25 @@ view(mpg_ford)
 
 mpg_metric <- mutate(mpg, cty_metric = 0.425144 * cty)
 glimpse(mpg_metric)
+
+mpg_metric <- mgp %>%
+    mutate(cty_metric = 0.425144 * cty)
+
+mpg %>%
+    group_by(class) %>%
+    summarise(mean(cty))
+mpg %>%
+    group_by(class) %>%
+    summarise(mean(cty), median(cty))
+
+# dataviz with ggplot2 (tidyverse)
+
+ggplot(mpg, aes(x=cty)) + 
+    geom_histogram() +
+        labs(x="city mileage")
+        
+ggplot(mpg, aes(x=cty)) + 
+    geom_freqpoly() +
+        labs(x="city mileage")
+
+
