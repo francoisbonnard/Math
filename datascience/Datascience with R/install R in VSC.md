@@ -4,6 +4,8 @@ download from this [link](https://cran.r-project.org/bin/windows/base/)
 
 Copy this path : C:\Program Files\R\R-4.5.1\library
 
+C:\Program Files\R\R-4.5.1\library
+
 Make env variables : R_LIBS_USER with this value : C:\Program Files\R\R-4.5.1\library
 
 In this folder : C:\Program Files\R\R-4.5.1\bin\x64
