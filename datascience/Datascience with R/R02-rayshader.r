@@ -16,8 +16,13 @@ setwd("C:/Rlib")
 .libPaths("C:/Rlib")
 
 install.packages("devtools")       # si pas encore installé
+library(usethis)
 library(devtools)
-devtools::install_github("tylermorganwall/rayshader")
+
+file.edit(file.path(Sys.getenv("HOME"), ".Rprofile"))
+file.edit(file.path(Sys.getenv("HOME"), ".Renviron"))
+
+devtools::install_github("tylermorganwall/rayshader")1
 
 version
 

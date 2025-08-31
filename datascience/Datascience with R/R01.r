@@ -60,7 +60,8 @@ view(mpg)
 glimpse(mpg)
 ? mpg
 ? mean
-
+? diamonds
+? economics
 filter(mpg, cty >= 20)
 mpg_efficient <- filter(mpg, cty >= 20)
 view(mpg_efficient)
@@ -111,3 +112,4 @@ ggplot(mpg, aes(x = cty, y = hwy, color = class)) +
             panel.grid.minor = element_line(color = "gray40"), # texte global
         )
 
+.libPaths()

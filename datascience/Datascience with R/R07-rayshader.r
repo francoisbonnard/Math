@@ -34,6 +34,7 @@ elmat %>%
 Sys.sleep(0.2)
 render_snapshot()
 
+install.packages("ggplot2")
 library(ggplot2)
 
 ggdiamonds = ggplot(diamonds) +

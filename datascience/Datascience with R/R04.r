@@ -110,3 +110,84 @@ mnt_ign <- crop(mnt_ign, ext(1.0, 4.5, 47.5, 50.0))
 library(rayshader)
 elmat <- raster_to_matrix(raster::raster(mnt_ign))
 elmat |> sphere_shade() |> plot_map()
+
+_______________________________________________________
+
+elmat %>%
+  sphere_shade(texture = "desert") %>%
+  add_water(detect_water(elmat), color = "desert") %>%
+  add_shadow(ray_shade(elmat, zscale = 3), 0.5) %>%
+  add_shadow(ambient_shade(elmat), 0) %>%
+  plot_3d(elmat, zscale = 10, fov = 0, theta = 135, zoom = 0.75, phi = 45, windowsize = c(1000, 800))
+Sys.sleep(0.2)
+render_snapshot()
+
+__________________________
+
+render_camera(fov = 0, theta = 60, zoom = 0.75, phi = 45)
+render_scalebar(limits=c(0, 5, 10),label_unit = "km",position = "W", y=50,
+                scale_length = c(0.33,1))
+render_compass(position = "E")
+render_snapshot(clear=TRUE)
+
+__________________________
+
+elmat %>%
+  sphere_shade(texture = "desert") %>%
+  add_water(detect_water(elmat), color = "desert") %>%
+  plot_3d(elmat, zscale = 10, fov = 0, theta = 60, zoom = 0.75, phi = 45, windowsize = c(1000, 800))
+
+render_scalebar(limits=c(0, 5, 10),label_unit = "km",position = "W", y=50,
+                scale_length = c(0.33,1))
+
+render_compass(position = "E")
+Sys.sleep(0.2)
+render_highquality(samples=200, scale_text_size = 24,clear=TRUE)
+render_snapshot(clear=TRUE)
+
+
+______________________________
+
+## 0) Assainir la session courante (ne PAS décharger le package)
+options(rgl.useNULL = FALSE)
+Sys.unsetenv("RGL_USE_NULL")   # au cas où il est resté à "true"
+
+## 1) Charger les libs
+library(rgl)
+library(rayshader)
+
+## 2) Fermer toutes les fenêtres rgl encore ouvertes (sans décharger le package)
+if (length(rgl.dev.list())) {
+  for (d in rgl.dev.list()) {
+    set3d(d)      # activer le device d
+    close3d()     # fermer le device courant
+  }
+}
+
+## 3) Ouvrir une nouvelle fenêtre rgl interactive
+if (rgl.cur() == 0) open3d()
+
+## 4) Exemple minimal interactif
+elmat <- volcano
+elmat %>%
+  sphere_shade(texture = "imhof1") %>%
+  plot_3d(elmat, zscale = 10, fov = 0, theta = -45, phi = 45,
+          windowsize = c(1000, 800))
+
+______________________________
+
+montereybay %>%
+  sphere_shade(texture = "desert") %>%
+  add_shadow(ray_shade(montereybay,zscale=50)) %>%
+  plot_3d(montereybay,water=TRUE, windowsize=c(1000,800), watercolor="dodgerblue")
+render_camera(theta=-60,  phi=60, zoom = 0.85, fov=30)
+
+#We will apply a negative buffer to create space between adjacent polygons:
+sf::sf_use_s2(FALSE) 
+mont_county_buff = sf::st_simplify(sf::st_buffer(monterey_counties_sf,-0.003), dTolerance=0.004)
+
+render_polygons(mont_county_buff,  
+                extent = attr(montereybay,"extent"), data_column_top = "ALAND",
+                scale_data = 300/(2.6E9), color="chartreuse4",
+                parallel=TRUE)
+render_highquality(clamp_value=10,samples=256)
