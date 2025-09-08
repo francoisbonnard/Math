@@ -54,3 +54,5 @@ $C_x = \frac{1}{2} ||y-a^L||^2 = \frac{1}{2n}\sum_j||y_j  - a^L_j||^2  $
 ## The four fundamental equations behind backpropagation
 
 to compute the partial derivatives $\delta C/\delta w^l_{jk}  $ and $\delta C/\delta b^l_j $ we need an intermediate quantity $\delta^l_j  $ which we call the error in the $j^{th} $ neuron of the $l^{th} $ layer
+
+[La F=ma de l'intelligence artificielle [Rétropropagation, comment les modèles apprennent, partie 2]](https://www.youtube.com/watch?v=VkHfRKewkWw)
