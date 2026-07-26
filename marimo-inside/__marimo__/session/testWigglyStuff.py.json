@@ -1,0 +1,360 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.15",
+    "script_metadata_hash": "756dafbf9badf42a623e50ec1b15b605"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "50b0be38dc815a51b9549b589786f9a9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"wigglystuff\">wigglystuff</h1>\n<span class=\"paragraph\"><a href=\"https://koaning.github.io/wigglystuff/\" rel=\"noopener noreferrer\" target=\"_blank\">https://koaning.github.io/wigglystuff/</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "f72199c54fae313cfe208756decba636",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "ba3499f3062137e474e65996eaa72c40",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"slider2d\">Slider2D</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "2da2e4165e3cb71dfe26af01d52bce1c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "9d2b1ad5bbc16c44d49116dc213c53f2",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "2d0041a6917dd797bde5a4eccc5ee087",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "0359d9bafe0b75d35bba0bbb13568c5e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"matrice-0-255\">Matrice 0 255</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "70d00e46172c924f847a25ffc801e8cd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='BYtC-0' random-id='f70d0506-99f5-5273-993a-897d644e748c'><marimo-slider data-initial-value='1' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003emin&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='255' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='BYtC-1' random-id='facabc1e-ffbf-8f9a-c580-908e3f338315'><marimo-slider data-initial-value='1' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003emax&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='255' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "0e4f0ec7445f13089ee31b9b0319bedc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "(255, 255)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "e42e1e64893558c1abef94435311b023",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='b48a9b2d-af24-84eb-fbce-2b465d40632a'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;e642e7417bf34d4ea1c0181a0169075d&quot;}' data-label='null' data-model-id='&quot;e642e7417bf34d4ea1c0181a0169075d&quot;'></marimo-anywidget></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "(255, 200, 255)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "emfo",
+      "code_hash": "b642f3af2af21865b32504b0de2596f0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"matrix-pca\">Matrix / PCA</h2>\n<span class=\"paragraph\">Principal Component Analysis</span>\n<span class=\"paragraph\"><code>wigglystuff.Matrix</code> has graduated to marimo core: this uses <code>mo.ui.matrix</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "c6d2b5ed6fa048493f7ff2409f9f73fc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Cette ligne projette les 1000 couleurs RGB (3D) vers un espace 2D via un produit matriciel :</span>\n<ul>\n<li><strong><code>pca_mat.value</code></strong> : la valeur actuelle du widget <code>mo.ui.matrix</code>, une liste imbriqu\u00e9e de forme 3\u00d72 (ex. <code>[[0.1, -0.5], [0.8, 0.2], [-0.3, 0.9]]</code>) que vous modifiez en glissant sur les cellules.</li>\n<li><strong><code>np.asarray(...)</code></strong> : convertit cette liste en tableau NumPy pour permettre l'alg\u00e8bre lin\u00e9aire.</li>\n<li><strong><code>@</code></strong> : l'op\u00e9rateur de produit matriciel. <code>rgb_mat</code> est de forme (1000, 3), la matrice de forme (3, 2), donc le r\u00e9sultat <code>X_tfm</code> est de forme <strong>(1000, 2)</strong>.</li>\n</ul>\n<span class=\"paragraph\">Concr\u00e8tement : chaque couleur <marimo-tex class=\"arithmatex\">||((r, g, b)||)</marimo-tex> devient un point <marimo-tex class=\"arithmatex\">||((x, y)||)</marimo-tex> o\u00f9 chaque coordonn\u00e9e est une combinaison lin\u00e9aire des 3 canaux :</span>\n<marimo-tex class=\"arithmatex\">||[x = r \\cdot m_{11} + g \\cdot m_{21} + b \\cdot m_{31}, \\qquad y = r \\cdot m_{12} + g \\cdot m_{22} + b \\cdot m_{32}||]</marimo-tex><span class=\"paragraph\">C'est exactement ce que fait une PCA (r\u00e9duction de dimension 3D \u2192 2D), sauf qu'ici c'est <strong>vous</strong> qui choisissez la matrice de projection interactivement \u2014 d'o\u00f9 le \"PCA demo\" : en ajustant les coefficients, vous cherchez la projection qui s\u00e9pare le mieux les couleurs dans le scatter plot.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "65c045a6b6294d6be8cd28e47bc3f67b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "7a14f30fe966783a1e973e665d0cce5b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "8e6ee98bd5f48f36c7af604d680226dc",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "6754c2be33278034e1473f17cf72cb3f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"produit-matriciel\">produit matriciel</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "760ecab3989bb2accc6dca470d3e7c2b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "90a5b044be066a5eb7599c685923d2d3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "734567167fb380d096f44e1b8609047f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "6930878fa9cd9faef4c42d092f9bd960",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "cb992c3b8a0347ae2f8fe3e169ad906e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "1888a069d4e07ecb85a4b95620475a37",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"threewidget\">ThreeWidget</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "59b09e02ddb50b9e16ec845e10db1d8f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "540a3b84bf3db018dcf29957d23641c3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "f87ae65123d782823ba7c1ff2891fa27",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "1d39f35f6ad74aa78760005fda5b6d54",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"graphwidget\">GraphWidget</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "6084577f7abb9fe89620a973c2149baf",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "47313b4d411acfe14515946c359daaab",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "a62ec9309232795a7f6e4255aa146596",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "2a4bc458a4b77907633edb4a7ccd7484",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aqbW",
+      "code_hash": "bd4b4c7b6001af305ef1422826f14436",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": "7c57c44c58c4c0d61f3cf4c5d311b0be",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TXez",
+      "code_hash": "7536d8d96ac03be592a4278a7f99e09a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"random-growth-graph\">Random growth graph</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dNNg",
+      "code_hash": "6364e530af6eb62e5e6ae69623d8d4c1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "yCnT",
+      "code_hash": "42e017e8636110d2b13fd6dd28c7d481",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wlCL",
+      "code_hash": "f4dcc4e3b43394600b94e29e67a2d32c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "kqZH",
+      "code_hash": "3c58826cc658a0ceef8bd7083479f3aa",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wAgl",
+      "code_hash": "7ee38a8bde8bfd8d28e4cf6950fe69ff",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "rEll",
+      "code_hash": "c6670452a5e7716e5516b20823dfc8f7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "dGlV",
+      "code_hash": "6562e68947347d170643302d2eb42d77",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
