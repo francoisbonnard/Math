@@ -5,6 +5,8 @@
 #     "numpy==2.5.1",
 #     "pandas==3.0.5",
 #     "pillow==12.3.0",
+#     "polars==1.43.1",
+#     "pyarrow",
 #     "wigglystuff==0.5.21",
 # ]
 # requires-python = ">=3.13"
@@ -598,6 +600,35 @@ def _(growth_graph, max_step, mo, step_index):
             mo.md(f"**Selected edges:** `{growth_graph.selected_edges}`"),
         ]
     )
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## Scatterwidget
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    from wigglystuff import ScatterWidget
+
+    widget = mo.ui.anywidget(ScatterWidget(n_classes=3))
+    widget
+    return (widget,)
+
+
+@app.cell
+def _(widget):
+    widget.data_as_polars
+    return
+
+
+@app.cell
+def _(widget):
+    widget.data_as_pandas
     return
 
 

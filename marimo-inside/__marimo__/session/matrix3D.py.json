@@ -1,0 +1,126 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.15",
+    "script_metadata_hash": "c7d48e68bf2c5d10b9afbe7332d941b8"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1e677b955f5632b3febe9a58da0e2f37",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"cube-3d-pilote-par-matrices-wigglystuff-threewidget\">Cube 3D pilot\u00e9 par matrices (wigglystuff ThreeWidget)</h1>\n<span class=\"paragraph\">Manipule le cube avec <strong>deux matrices</strong> :</span>\n<ul>\n<li><marimo-tex class=\"arithmatex\">||(R||)</marimo-tex> : matrice <marimo-tex class=\"arithmatex\">||(3{\\times}3||)</marimo-tex> (rotation \u2014 ou cisaillement/\u00e9chelle si tu sors des rotations pures)</li>\n<li><marimo-tex class=\"arithmatex\">||(t||)</marimo-tex> : vecteur de translation <marimo-tex class=\"arithmatex\">||(3{\\times}1||)</marimo-tex></li>\n</ul>\n<span class=\"paragraph\">La transformation appliqu\u00e9e au cube est la matrice homog\u00e8ne\n<marimo-tex class=\"arithmatex\">||(M = \\begin{pmatrix} R &amp; t \\\\ 0 &amp; 1 \\end{pmatrix}||)</marimo-tex>.</span>\n<span class=\"paragraph\">Astuce : fais glisser les valeurs des matrices horizontalement pour les modifier.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "f1bf29eee590de472ca4753e82c73281",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "eaca277c0491ddd600c0c3d195e36bc7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "b53aec3293213b9ca863c63398036102",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "ca7f8279f375b6cad7b641891b348ec4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Matrice homog\u00e8ne envoy\u00e9e \u00e0 three.js :</span>\n<marimo-tex class=\"arithmatex\">||[M = \\begin{pmatrix} 0.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 \\\\ 0.67 &amp; 1.00 &amp; -1.56 &amp; 0.00 \\\\ 1.98 &amp; 0.00 &amp; 0.83 &amp; 0.00 \\\\ 0.00 &amp; 0.00 &amp; 0.00 &amp; 1.00 \\end{pmatrix}||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "150b371366c5ee6ce437360a7083d67a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "30574d4d01f7cc9cabed619ca8afbd5a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='c62ce1a0-342d-430b-e716-581435214633'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;af02afc57f3b4cb69d954b8b2e8b0998&quot;}' data-label='null' data-model-id='&quot;af02afc57f3b4cb69d954b8b2e8b0998&quot;'></marimo-anywidget></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "6ad5b30f15ca40b737731e72728ea9d9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "328fbc8d90bcb48099f520d82a8a427d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 3rem'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Rotation <marimo-tex class=\"arithmatex\">||(R||)</marimo-tex></strong></span></span><marimo-ui-element object-id='vblA-0' random-id='5b92d530-c509-3093-ffa7-c3d4e2720cad'><marimo-matrix data-initial-value='[[1.0,0.0,0.0],[0.0,1.0,0.0],[0.0,0.0,1.0]]' data-label='null' data-step='[[0.1,0.1,0.1],[0.1,0.1,0.1],[0.1,0.1,0.1]]' data-precision='1' data-symmetric='false' data-debounce='false' data-scientific='false' data-disabled='[[false,false,false],[false,false,false],[false,false,false]]'></marimo-matrix></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Translation <marimo-tex class=\"arithmatex\">||(t||)</marimo-tex></strong></span></span><marimo-ui-element object-id='vblA-1' random-id='e4cf04a8-572d-d6db-251a-71b41ba56669'><marimo-matrix data-initial-value='[[0.0],[0.0],[0.0]]' data-label='null' data-step='[[0.5],[0.5],[0.5]]' data-precision='1' data-symmetric='false' data-debounce='false' data-scientific='false' data-disabled='[[false],[false],[false]]'></marimo-matrix></marimo-ui-element></div></div><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>Optionnel : le slider ci-dessous g\u00e9n\u00e8re une rotation Y pure (il ne modifie pas la matrice \u00e9ditable, il s'y compose).</em></span></span><marimo-ui-element object-id='vblA-2' random-id='74acc4e1-2c40-1a57-d98b-e49ff470ef88'><marimo-slider data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003e\u03b8 (rotation Y en degr\u00e9s)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='-180' data-stop='180' data-step='5' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
