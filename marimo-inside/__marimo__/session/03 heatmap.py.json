@@ -1,0 +1,61 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.15",
+    "script_metadata_hash": "96482f41b80b38aaa362b949f847cf72"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "4fdb635ab81e39064075bc94a9766e0b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Source\n<a href=\"https://molab.marimo.io/github/koaning/wigglystuff/blob/main/demos/heatmap_select.py/wasm?utm_source=wigglystuff\" rel=\"noopener noreferrer\" target=\"_blank\">https://molab.marimo.io/github/koaning/wigglystuff/blob/main/demos/heatmap_select.py/wasm?utm_source=wigglystuff</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "06a109add8bd085de79b227c006b179c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "10a17a8ca742e9e2034ace7e9e08b600",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><a href=\"https://worrydream.com/LadderOfAbstraction/\" rel=\"noopener noreferrer\" target=\"_blank\">https://worrydream.com/LadderOfAbstraction/</a></span>\n<span class=\"paragraph\">One pixel is one cell, and the two strips along the left and bottom edges of the grid are interactive gutters.</span>\n<ul>\n<li>Hover the grid to preview a single cell. Hover the left gutter for a whole row, or the bottom gutter for a whole column.</li>\n<li>Click to pin. The three pins are independent and coexist \u2014 pin a cell, then a row, then a column, and all three stay. Clicking a region only replaces that region's pin; hovering never disturbs any of them.</li>\n<li>Double-click a region to drop just that pin.</li>\n</ul>\n<span class=\"paragraph\">Each axis has its own colour, in the widget's bands and in the charts beside them: blue for the y axis (a row) and orange for the x axis (a column). Hovering draws faint and transparent; pinning makes it solid. Making sense of a combination of pins is the caller's job, not the widget's.</span>\n<span class=\"paragraph\">Below are two parameter spaces that want completely different things from you. The first is smooth enough that you can read conclusions straight off it. The second is chaotic, and poking at it is the only thing you can do.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "VWXW",
+      "code_hash": "32cce482f9f9d399a208ea8b32fa51ab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

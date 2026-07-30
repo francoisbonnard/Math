@@ -1,0 +1,47 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.15",
+    "script_metadata_hash": "3848cc8a0cc585ffa729cd41ae6e9038"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "48f9ce6933b2bd65fba06745776b6bb9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "5eead2c5f2114ba6a0140d1cefb78cec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='NzOn-0' random-id='d85ce3a1-9e00-00e6-69df-96c7eaac74c2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;bigram&#92;&quot;:&#92;&quot;th&#92;&quot;,&#92;&quot;freq&#92;&quot;:116997844},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;he&#92;&quot;,&#92;&quot;freq&#92;&quot;:100689263},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;in&#92;&quot;,&#92;&quot;freq&#92;&quot;:87674002},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;er&#92;&quot;,&#92;&quot;freq&#92;&quot;:77134382},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;an&#92;&quot;,&#92;&quot;freq&#92;&quot;:69775179},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;re&#92;&quot;,&#92;&quot;freq&#92;&quot;:60923600},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;es&#92;&quot;,&#92;&quot;freq&#92;&quot;:57070453},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;on&#92;&quot;,&#92;&quot;freq&#92;&quot;:56915252},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;st&#92;&quot;,&#92;&quot;freq&#92;&quot;:54018399},{&#92;&quot;bigram&#92;&quot;:&#92;&quot;nt&#92;&quot;,&#92;&quot;freq&#92;&quot;:50701084}]&quot;' data-total-rows='676' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;bigram&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;freq&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

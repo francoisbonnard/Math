@@ -1,0 +1,79 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.15",
+    "script_metadata_hash": "dcce6434101c5991a0c491658e9c95c6"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "b03ae3d1a8c7e35b57a5d71425064bb8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "47e40bc3634584d767975a621f5e9879",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">docker compose up -d</span>\n<div class=\"language-text highlight\"><pre><span></span><code>http://localhost:7474\n</code></pre></div>\n<ul>\n<li>URI : bolt://localhost:7687</li>\n<li>User : neo4j</li>\n<li>Password : marimo12345</li>\n<li>Database : neo4j</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "8c3c915d70466dac204807af265caa10",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='vblA-0' random-id='d70bd12c-f1f8-93bf-28e8-3de544c1c273'><marimo-text data-initial-value='&quot;bolt://localhost:7687&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eURI&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='false' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='vblA-1' random-id='41a09b4c-0d53-61c9-2a07-2e81108b5955'><marimo-text data-initial-value='&quot;neo4j&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eUser&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='false' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='vblA-2' random-id='210e7cab-b4a6-3d2e-2b0c-9db2134431c3'><marimo-text data-initial-value='&quot;&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003ePassword&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;password&quot;' data-full-width='false' data-disabled='false' data-debounce='true' data-password-has-value='true'></marimo-text></marimo-ui-element><marimo-ui-element object-id='vblA-3' random-id='8be2ebaf-20af-4fd2-f0b8-5f7eecae4071'><marimo-text data-initial-value='&quot;neo4j&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eDatabase&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-kind='&quot;text&quot;' data-full-width='false' data-disabled='false' data-debounce='true'></marimo-text></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "a094ee8d23c7f5208bdce4fa91ccb73b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='7caf6e8d-33a0-7ff9-96e9-d338a5b0f2da'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;42a32f4673ed4591a19a8c2622843c4a&quot;}' data-label='null' data-model-id='&quot;42a32f4673ed4591a19a8c2622843c4a&quot;'></marimo-anywidget></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "d20c282aa5c3c32813b5096b4847dad8",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "422e93a1971e1fb780a7924582338b64",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "6eedf25243dabc176282323ffce110ac",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
