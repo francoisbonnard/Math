@@ -1,7 +1,7 @@
 # /// script
 # dependencies = [
 #     "altair==6.2.2",
-#     "marimo",
+#     "marimo>=0.23.3",
 #     "numpy==2.5.1",
 #     "pandas==3.0.5",
 #     "pillow==12.3.0",
@@ -14,7 +14,7 @@
 
 import marimo
 
-__generated_with = "0.23.15"
+__generated_with = "0.23.14"
 app = marimo.App(width="medium")
 
 
