@@ -1,0 +1,367 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.16",
+    "script_metadata_hash": "a74f79f478afe173823bace96b341cba"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "2165a3ac278eb64f0d36dac4f79fbeda",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "e2ddceb8064dfb2235ad898d34eee19a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YLzD",
+      "code_hash": "ea38e830add377706d94cf6544729e01",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><a href=\"https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930654#overview\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930654#overview</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "thHA",
+      "code_hash": "d8dbb7256c5e6e383757cc237ad3415f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Norms, particularly L1 and L2, used to regularize objective functions</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Mjtd",
+      "code_hash": "9c55570e46403bca08c9f88b988468a6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>array([25,  2,  5])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hZwS",
+      "code_hash": "68daa504349d958bf5bf5dbf23b98296",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ L^1 Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_1 = {\\sum_{i} |x_i|}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PPmD",
+      "code_hash": "b3d8fed8c361d11e167639b9ec1b7df2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>32</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lZGd",
+      "code_hash": "5503f14ce187ee99c54010b914292b44",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ L^2 Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_2 = \\sqrt{\\sum_{i} x_i^2}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DFMz",
+      "code_hash": "56ec3509444724d5437e2fe05c5515ef",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>np.float64(25.573423705088842)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tctH",
+      "code_hash": "b3e832bacb49fa17286f3cf7bfd76eaa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>25.573423705088842</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wnBW",
+      "code_hash": "cf7dbae0454c6f4c13bb530ae0b59e9e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>654</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aOKa",
+      "code_hash": "b837de00d546d1f725edb193b24357e8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>654</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AVqr",
+      "code_hash": "89141965875fd40239fde7805619a36d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Max Norm </span>\n<marimo-tex class=\"arithmatex\">||[ L^\u221e Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[ \\|x\\|_\u221e = max | x_i |||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vugt",
+      "code_hash": "91317c84a86e22432751615b3c8e9676",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>25</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zaur",
+      "code_hash": "b8bd8ba131e1dd52918d7dc5ef6ceff2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ Generalized \\space L^P Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_p = \\left(\\sum_{i} |x_i|^p\\right)^{1/p}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DoZh",
+      "code_hash": "df947aa696054dd59a5b49ad4489a85c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"basis-vectors\">Basis Vectors</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mRWm",
+      "code_hash": "7db030b3db056e7fedee55aa5bef10a5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"orthogonal-vectors\">Orthogonal Vectors</h2>\n<marimo-tex class=\"arithmatex\">||[ x^Ty=0 ||]</marimo-tex><span class=\"paragraph\">n-dimensional space has max n mutually orthogonal vectors</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LPqN",
+      "code_hash": "c3a3250555ce3f16b2eaaf37f3cc524c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"orthonormal-vectors\">Orthonormal Vectors</h2>\n<span class=\"paragraph\">Orthogonal &amp; all have unit norm</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vvuO",
+      "code_hash": "49f47d0a158d612d16220ebddef58626",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain:[1 0]\", \"text/plain:[0 1]\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wIfg",
+      "code_hash": "c1095c9c65992ec0dd33b609469ad784",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>0</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "eFQk",
+      "code_hash": "c94af3df86c3696e9b4dd60e7e20057f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"matrix-tensors\">Matrix Tensors</h1>\n<span class=\"paragraph\"><a href=\"https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930660#overview\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930660#overview</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "oxJF",
+      "code_hash": "177181382e58b397939d35e3303084f4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><marimo-tex class=\"arithmatex\">||(M = \\begin{pmatrix} R &amp; t \\\\ 0 &amp; 1 \\end{pmatrix}||)</marimo-tex>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "VQQn",
+      "code_hash": "87d44423a6d99bcbd95c95e1faaae25e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ Square \\space L^2 Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_2^2 = {\\sum_{i} x_i^2}\n||]</marimo-tex><span class=\"paragraph\">Computationally cheaper to user because  </span>\n<marimo-tex class=\"arithmatex\">||[ Squared \\space L^2 norm = x^Tx ||]</marimo-tex><span class=\"paragraph\">Et tout un d\u00e9lire que je n'ai pas compris ; </span>\n<div class=\"language-carbon highlight\"><pre><span></span><code><span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Computationally</span><span class=\"w\"> </span><span class=\"nx\">cheaper</span><span class=\"w\"> </span><span class=\"nx\">to</span><span class=\"w\"> </span><span class=\"nx\">use</span><span class=\"w\"> </span><span class=\"nx\">than</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">L</span><span class=\"o\">^</span><span class=\"mi\">2</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">norm</span><span class=\"w\"> </span><span class=\"nx\">because</span><span class=\"p\">:</span>\n<span class=\"w\">\u2003</span><span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Squared</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">L</span><span class=\"o\">^</span><span class=\"mi\">2</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">norm</span><span class=\"w\"> </span><span class=\"nx\">equals</span><span class=\"w\"> </span><span class=\"nx\">simply</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">x</span><span class=\"o\">^</span><span class=\"nx\">T</span><span class=\"w\"> </span><span class=\"nx\">x</span><span class=\"p\">)</span>\n<span class=\"w\">\u2003</span><span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Derivative</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">used</span><span class=\"w\"> </span><span class=\"nx\">to</span><span class=\"w\"> </span><span class=\"nx\">train</span><span class=\"w\"> </span><span class=\"nx\">many</span><span class=\"w\"> </span><span class=\"nx\">ML</span><span class=\"w\"> </span><span class=\"nx\">algorithms</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">of</span><span class=\"w\"> </span><span class=\"nx\">element</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">x</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">requires</span><span class=\"w\"> </span><span class=\"nx\">that</span><span class=\"w\"> </span><span class=\"nx\">element</span><span class=\"w\"> </span><span class=\"nx\">alone</span><span class=\"p\">,</span><span class=\"w\"> </span><span class=\"nx\">whereas</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">L</span><span class=\"o\">^</span><span class=\"mi\">2</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">norm</span><span class=\"w\"> </span><span class=\"nx\">requires</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">x</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">vector</span>\n\n<span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Downside</span><span class=\"w\"> </span><span class=\"k\">is</span><span class=\"w\"> </span><span class=\"nx\">it</span><span class=\"w\"> </span><span class=\"nx\">grows</span><span class=\"w\"> </span><span class=\"nx\">slowly</span><span class=\"w\"> </span><span class=\"nx\">near</span><span class=\"w\"> </span><span class=\"nx\">origin</span><span class=\"w\"> </span><span class=\"nx\">so</span><span class=\"w\"> </span><span class=\"nx\">can</span><span class=\"err\">\u2019</span><span class=\"nx\">t</span><span class=\"w\"> </span><span class=\"nx\">be</span><span class=\"w\"> </span><span class=\"nx\">used</span><span class=\"w\"> </span><span class=\"k\">if</span><span class=\"w\"> </span><span class=\"nx\">distinguishing</span><span class=\"w\"> </span><span class=\"nx\">between</span><span class=\"w\"> </span><span class=\"nx\">zero</span><span class=\"w\"> </span><span class=\"k\">and</span><span class=\"w\"> </span><span class=\"nx\">near</span><span class=\"o\">-</span><span class=\"nx\">zero</span><span class=\"w\"> </span><span class=\"k\">is</span><span class=\"w\"> </span><span class=\"nx\">important</span>\n</code></pre></div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "EhbM",
+      "code_hash": "a7f52a8a0bee0067fab67c35d3ae8a7f",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "name 'M' is not defined",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;C:\\Users\\franc\\AppData\\Local\\Temp\\marimo_15484\\__marimo__cell_EhbM_.py&quot;</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">np</span><span class=\"o\">.</span><span class=\"n\">asarray</span><span class=\"p\">(</span><span class=\"n\">M</span><span class=\"p\">)</span>\n<span class=\"w\">               </span><span class=\"pm\">^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name &#39;M&#39; is not defined</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "SkWn",
+      "code_hash": "ae0043635cc64b4b7cf287ab5a063170",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "name 'M' is not defined",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;C:\\Users\\franc\\AppData\\Local\\Temp\\marimo_15484\\__marimo__cell_SkWn_.py&quot;</span>, line <span class=\"m\">2</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">_rows</span> <span class=\"o\">=</span> <span class=\"sa\">r</span><span class=\"s2\">&quot; </span><span class=\"se\">\\\\</span><span class=\"s2\"> &quot;</span><span class=\"o\">.</span><span class=\"n\">join</span><span class=\"p\">(</span><span class=\"s2\">&quot; &amp; &quot;</span><span class=\"o\">.</span><span class=\"n\">join</span><span class=\"p\">(</span><span class=\"sa\">f</span><span class=\"s2\">&quot;</span><span class=\"si\">{</span><span class=\"n\">v</span><span class=\"si\">:</span><span class=\"s2\">.2f</span><span class=\"si\">}</span><span class=\"s2\">&quot;</span> <span class=\"k\">for</span> <span class=\"n\">v</span> <span class=\"ow\">in</span> <span class=\"n\">_row</span><span class=\"p\">)</span> <span class=\"k\">for</span> <span class=\"n\">_row</span> <span class=\"ow\">in</span> <span class=\"n\">np</span><span class=\"o\">.</span><span class=\"n\">asarray</span><span class=\"p\">(</span><span class=\"n\">M</span><span class=\"p\">)</span>\n<span class=\"w\">                                                                                     </span><span class=\"pm\">^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name &#39;M&#39; is not defined</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.16",
+    "script_metadata_hash": "a74f79f478afe173823bace96b341cba"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "2165a3ac278eb64f0d36dac4f79fbeda",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "e2ddceb8064dfb2235ad898d34eee19a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "ea38e830add377706d94cf6544729e01",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><a href=\"https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930654#overview\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930654#overview</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "d8dbb7256c5e6e383757cc237ad3415f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Norms, particularly L1 and L2, used to regularize objective functions</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "9c55570e46403bca08c9f88b988468a6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>array([25,  2,  5])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "68daa504349d958bf5bf5dbf23b98296",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ L^1 Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_1 = {\\sum_{i} |x_i|}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "b3d8fed8c361d11e167639b9ec1b7df2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>32</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "5503f14ce187ee99c54010b914292b44",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ L^2 Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_2 = \\sqrt{\\sum_{i} x_i^2}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "56ec3509444724d5437e2fe05c5515ef",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>np.float64(25.573423705088842)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "b3e832bacb49fa17286f3cf7bfd76eaa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>25.573423705088842</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "7539def070845733e1ae9d7e8ece0aa2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ Square \\space L^2 Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_2^2 = {\\sum_{i} x_i^2}\n||]</marimo-tex><span class=\"paragraph\">Computationally cheaper to user because</span>\n<marimo-tex class=\"arithmatex\">||[ Squared \\space L^2 norm = x^Tx ||]</marimo-tex><span class=\"paragraph\">Et tout un d\u00e9lire que je n'ai pas compris ;</span>\n<div class=\"language-carbon highlight\"><pre><span></span><code><span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Computationally</span><span class=\"w\"> </span><span class=\"nx\">cheaper</span><span class=\"w\"> </span><span class=\"nx\">to</span><span class=\"w\"> </span><span class=\"nx\">use</span><span class=\"w\"> </span><span class=\"nx\">than</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">L</span><span class=\"o\">^</span><span class=\"mi\">2</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">norm</span><span class=\"w\"> </span><span class=\"nx\">because</span><span class=\"p\">:</span>\n<span class=\"w\">\u2003</span><span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Squared</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">L</span><span class=\"o\">^</span><span class=\"mi\">2</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">norm</span><span class=\"w\"> </span><span class=\"nx\">equals</span><span class=\"w\"> </span><span class=\"nx\">simply</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">x</span><span class=\"o\">^</span><span class=\"nx\">T</span><span class=\"w\"> </span><span class=\"nx\">x</span><span class=\"p\">)</span>\n<span class=\"w\">\u2003</span><span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Derivative</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">used</span><span class=\"w\"> </span><span class=\"nx\">to</span><span class=\"w\"> </span><span class=\"nx\">train</span><span class=\"w\"> </span><span class=\"nx\">many</span><span class=\"w\"> </span><span class=\"nx\">ML</span><span class=\"w\"> </span><span class=\"nx\">algorithms</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">of</span><span class=\"w\"> </span><span class=\"nx\">element</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">x</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">requires</span><span class=\"w\"> </span><span class=\"nx\">that</span><span class=\"w\"> </span><span class=\"nx\">element</span><span class=\"w\"> </span><span class=\"nx\">alone</span><span class=\"p\">,</span><span class=\"w\"> </span><span class=\"nx\">whereas</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">L</span><span class=\"o\">^</span><span class=\"mi\">2</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">norm</span><span class=\"w\"> </span><span class=\"nx\">requires</span><span class=\"w\"> </span><span class=\"p\">(</span><span class=\"nx\">x</span><span class=\"p\">)</span><span class=\"w\"> </span><span class=\"nx\">vector</span>\n\n<span class=\"err\">\u2022</span><span class=\"w\"> </span><span class=\"nx\">Downside</span><span class=\"w\"> </span><span class=\"k\">is</span><span class=\"w\"> </span><span class=\"nx\">it</span><span class=\"w\"> </span><span class=\"nx\">grows</span><span class=\"w\"> </span><span class=\"nx\">slowly</span><span class=\"w\"> </span><span class=\"nx\">near</span><span class=\"w\"> </span><span class=\"nx\">origin</span><span class=\"w\"> </span><span class=\"nx\">so</span><span class=\"w\"> </span><span class=\"nx\">can</span><span class=\"err\">\u2019</span><span class=\"nx\">t</span><span class=\"w\"> </span><span class=\"nx\">be</span><span class=\"w\"> </span><span class=\"nx\">used</span><span class=\"w\"> </span><span class=\"k\">if</span><span class=\"w\"> </span><span class=\"nx\">distinguishing</span><span class=\"w\"> </span><span class=\"nx\">between</span><span class=\"w\"> </span><span class=\"nx\">zero</span><span class=\"w\"> </span><span class=\"k\">and</span><span class=\"w\"> </span><span class=\"nx\">near</span><span class=\"o\">-</span><span class=\"nx\">zero</span><span class=\"w\"> </span><span class=\"k\">is</span><span class=\"w\"> </span><span class=\"nx\">important</span>\n</code></pre></div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "cf7dbae0454c6f4c13bb530ae0b59e9e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>654</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "b837de00d546d1f725edb193b24357e8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>654</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "20d598a2bc9c930b339445275528dd1f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Max Norm</span>\n<marimo-tex class=\"arithmatex\">||[ L^\u221e Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[ \\|x\\|_\u221e = max | x_i |||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "91317c84a86e22432751615b3c8e9676",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>25</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "061717c5f1edacc9fc8dd07d439e8296",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[ Generalized \\space L^P Norm ||]</marimo-tex><marimo-tex class=\"arithmatex\">||[\n\\|x\\|_p = \\left(\\sum_{i} |x_i|^p\\right)^{1/p}\n||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "df947aa696054dd59a5b49ad4489a85c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"basis-vectors\">Basis Vectors</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "7db030b3db056e7fedee55aa5bef10a5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"orthogonal-vectors\">Orthogonal Vectors</h2>\n<marimo-tex class=\"arithmatex\">||[ x^Ty=0 ||]</marimo-tex><span class=\"paragraph\">n-dimensional space has max n mutually orthogonal vectors</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "6f221e8579bd2f7cae696aa5f383af3c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"orthonormal-vectors\">Orthonormal Vectors</h2>\n<span class=\"paragraph\">Orthogonal &amp; all have unit norm</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "49f47d0a158d612d16220ebddef58626",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain:[1 0]\", \"text/plain:[0 1]\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "c1095c9c65992ec0dd33b609469ad784",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>0</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dfPm",
+      "code_hash": "9dfedc264c84c73838494ceed7b02720",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"rappel-sur-les-matrices-dans-marimo\">Rappel sur les matrices dans Marimo</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "177181382e58b397939d35e3303084f4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><marimo-tex class=\"arithmatex\">||(M = \\begin{pmatrix} R &amp; t \\\\ 0 &amp; 1 \\end{pmatrix}||)</marimo-tex>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tlar",
+      "code_hash": "021c96be4dcb96388d8dae04fc4902c4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='tlar-0' random-id='87f26c5a-c1c9-f2d5-5871-37e6694ada41'><marimo-slider data-initial-value='5' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eTaille n&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='1' data-stop='12' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "f6c895fbc3a598cbdb78bf5f28c94d2f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "a7f52a8a0bee0067fab67c35d3ae8a7f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>array([[1., 0., 0., 0., 0., 0.],\n       [0., 1., 0., 0., 0., 0.],\n       [0., 0., 1., 0., 0., 0.],\n       [0., 0., 0., 1., 0., 0.],\n       [0., 0., 0., 0., 1., 0.],\n       [0., 0., 0., 0., 0., 1.]])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "ae0043635cc64b4b7cf287ab5a063170",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><marimo-tex class=\"arithmatex\">||[M = \\begin{pmatrix} 1.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 \\\\ 0.00 &amp; 1.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 \\\\ 0.00 &amp; 0.00 &amp; 1.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 \\\\ 0.00 &amp; 0.00 &amp; 0.00 &amp; 1.00 &amp; 0.00 &amp; 0.00 \\\\ 0.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 &amp; 1.00 &amp; 0.00 \\\\ 0.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 &amp; 0.00 &amp; 1.00 \\end{pmatrix}||]</marimo-tex></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KWma",
+      "code_hash": "5a86f3e7bd126578600590ea8379c49e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='KWma-0' random-id='9113784c-9ac6-89ae-6099-b858a1f0efd5'><marimo-matrix data-initial-value='[[1.0,0.0,0.0,0.0,0.0,0.0],[0.0,1.0,0.0,0.0,0.0,0.0],[0.0,0.0,1.0,0.0,0.0,0.0],[0.0,0.0,0.0,1.0,0.0,0.0],[0.0,0.0,0.0,0.0,1.0,0.0],[0.0,0.0,0.0,0.0,0.0,1.0]]' data-label='null' data-step='[[0.1,0.1,0.1,0.1,0.1,0.1],[0.1,0.1,0.1,0.1,0.1,0.1],[0.1,0.1,0.1,0.1,0.1,0.1],[0.1,0.1,0.1,0.1,0.1,0.1],[0.1,0.1,0.1,0.1,0.1,0.1],[0.1,0.1,0.1,0.1,0.1,0.1]]' data-precision='1' data-symmetric='false' data-debounce='false' data-scientific='false' data-disabled='[[false,false,false,false,false,false],[false,false,false,false,false,false],[false,false,false,false,false,false],[false,false,false,false,false,false],[false,false,false,false,false,false],[false,false,false,false,false,false]]'></marimo-matrix></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "c94af3df86c3696e9b4dd60e7e20057f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"matrix-tensors\">Matrix Tensors</h1>\n<span class=\"paragraph\"><a href=\"https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930660#overview\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/learn/lecture/22930660#overview</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ygIi",
+      "code_hash": "ea2e3556b48d04df7c1c55305ba622f1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>array([[25,  2],\n       [ 5, 26],\n       [ 3,  7],\n       [ 4,  1]])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ePZW",
+      "code_hash": "cbc3a1346a94470c75c64592b447a559",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[4, 2]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aziA",
+      "code_hash": "8b58a46dd5901d5c78ad717d3d48bf59",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>8</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uRjj",
+      "code_hash": "8259d692688fe33d4ef6db6b5b7210d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>array([ 5, 26])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tJOu",
+      "code_hash": "f24a9fb9a7cd7efa7e5e229b07c1a3ac",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>array([25,  5,  3,  4])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "FoVo",
+      "code_hash": "b6a9af9e085d47149ec18663f7616e23",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>array([[ 5, 26],\n       [ 3,  7]])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Juey",
+      "code_hash": "eff99912463ff675f1d9238594cda7d2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"matrices-in-pytorch\">Matrices in PyTorch</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OxYR",
+      "code_hash": "30150abd90658a994dd817ee253b32fd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>tensor([[25,  2],\n        [ 5, 26],\n        [ 3,  7],\n        [ 4,  1]])</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LNAA",
+      "code_hash": "64b69a1d41be9bac14c263c6a8d33b0f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>torch.Size([4, 2])</pre>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
